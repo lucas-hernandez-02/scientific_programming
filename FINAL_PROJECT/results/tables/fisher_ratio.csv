@@ -1,0 +1,11 @@
+feature,FisherRatio,discriminative
+organic_area,3.5342,True
+organic_peak,2.7512,True
+clay_area,1.2352,True
+spectral_entropy,0.9828,False
+clay_peak,0.5064,False
+clay_std,0.329,False
+spectral_slope,0.2546,False
+mean_power,0.016,False
+organic_std,0.0004,False
+spectral_energy,0.0,False

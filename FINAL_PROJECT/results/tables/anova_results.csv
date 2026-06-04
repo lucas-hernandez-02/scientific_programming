@@ -1,0 +1,11 @@
+feature,F,p_value,significant
+spectral_slope,30.9858,0.0,True
+spectral_entropy,121.4078,0.0,True
+clay_peak,64.814,0.0,True
+clay_area,156.7522,0.0,True
+clay_std,40.7871,0.0,True
+organic_area,426.497,0.0,True
+organic_peak,333.1239,0.0,True
+spectral_energy,5.2306,0.023,True
+mean_power,5.2337,0.023,True
+organic_std,0.0475,0.8277,False
