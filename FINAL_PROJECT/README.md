@@ -249,9 +249,9 @@ Three pairs of implementations are compared:
 
 | Algorithm | Original | Optimized | Reduction |
 |---|---|---|---|
-| SNV | Pandas `.sub().div()` | NumPy broadcasting | ~30x |
+| SNV | Pandas `.sub().div()` | NumPy broadcasting | ~2.96x |
 | Moving average | Python loop + `np.convolve` | `scipy.signal.fftconvolve` | ~1.3x |
-| Global features | Python loop + `np.polyfit` | Vectorized least-squares | ~28x |
+| Global features | Python loop + `np.polyfit` | Vectorized least-squares | ~1.28x |
 
 The theoretical complexity of each pair is the same (`O(n·m)`), but the optimized version eliminates Python loop overhead by operating directly on C/NumPy, reducing the multiplicative constants by one or two orders of magnitude.
 
