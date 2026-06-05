@@ -285,7 +285,7 @@ where:
 - SNV normalization substantially reduces baseline differences between instruments, but the residual separability (instrument accuracy above the random baseline) confirms that an instrumental fingerprint not removed by SNV persists.
 - Clay-band features and global spectral energy are the most discriminative according to Fisher Ratio.
 - Classification models significantly outperform the Baseline, confirming that the 10 extracted features capture real structure.
-- The optimized vs non-optimized algorithm comparison shows time reductions up to 30x by replacing Python loops with vectorized NumPy operations, without changing theoretical complexity.
+- The optimized vs non-optimized algorithm comparison shows time reductions up to 2.96x by replacing Python loops with vectorized NumPy operations, without changing theoretical complexity.
 
 ---
 
