@@ -251,7 +251,7 @@ Three pairs of implementations are compared:
 |---|---|---|---|
 | SNV | Pandas `.sub().div()` | NumPy broadcasting | ~2.96x |
 | Moving average | Python loop + `np.convolve` | `scipy.signal.fftconvolve` | ~1.3x |
-| Global features | Python loop + `np.polyfit` | Vectorized least-squares | ~1.28x |
+| Global features | Python loop + `np.polyfit` | Vectorized least-squares | ~17.6x |
 
 The theoretical complexity of each pair is the same (`O(n·m)`), but the optimized version eliminates Python loop overhead by operating directly on C/NumPy, reducing the multiplicative constants by one or two orders of magnitude.
 
@@ -285,7 +285,7 @@ where:
 - SNV normalization substantially reduces baseline differences between instruments, but the residual separability (instrument accuracy above the random baseline) confirms that an instrumental fingerprint not removed by SNV persists.
 - Clay-band features and global spectral energy are the most discriminative according to Fisher Ratio.
 - Classification models significantly outperform the Baseline, confirming that the 10 extracted features capture real structure.
-- The optimized vs non-optimized algorithm comparison shows time reductions up to 2.96x by replacing Python loops with vectorized NumPy operations, without changing theoretical complexity.
+- The optimized vs non-optimized algorithm comparison shows time reductions up to 17.6x by replacing Python loops with vectorized NumPy operations, without changing theoretical complexity.
 
 ---
 
